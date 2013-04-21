@@ -1,1 +1,0 @@
---debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/System.Xml.Linq.dll.armv7.s "/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/bin/iPhone/Debug/CuriousWeatherReport.app/System.Xml.Linq.dll"
