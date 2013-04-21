@@ -18,6 +18,11 @@ namespace CuriousWeather
     public static event EventHandler                DataLoading;
     public static event EventHandler<BoolEventArgs> DataLoaded;
 
+    public static bool IsTall {
+      get {
+        return UIScreen.MainScreen.Bounds.Height > 500;
+      }
+    }
 
     public static void ReloadData()
     {
@@ -215,6 +220,8 @@ namespace CuriousWeather
         if (_action != null) _action();
       });
     }
+
+    public static Random Random = new Random();
   }
 
   public static class ExtensionMethods

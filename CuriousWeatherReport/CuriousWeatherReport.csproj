@@ -131,7 +131,6 @@
     <BundleResource Include="Resources\seg_divide%402x.png" />
     <BundleResource Include="Resources\seg_normal%402x.png" />
     <BundleResource Include="Resources\seg_highlight%402x.png" />
-    <BundleResource Include="Resources\background_Weather%402x.png" />
     <BundleResource Include="Resources\background_Tweet%402x.png" />
     <BundleResource Include="Resources\weather_Pressure%402x.png" />
     <BundleResource Include="Resources\weather_Temp%402x.png" />
@@ -151,6 +150,20 @@
     <BundleResource Include="Resources\Icon.png" />
     <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\wind_1%402x.png" />
+    <BundleResource Include="Resources\wind_2%402x.png" />
+    <BundleResource Include="Resources\wind_3%402x.png" />
+    <BundleResource Include="Resources\wind_4%402x.png" />
+    <BundleResource Include="Resources\sun_Face%402x.png" />
+    <BundleResource Include="Resources\background_Weather%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Eyes_1%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Eyes_2%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Eyes_3%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Eyes_4%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Eyes_5%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_3%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_2%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_1%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

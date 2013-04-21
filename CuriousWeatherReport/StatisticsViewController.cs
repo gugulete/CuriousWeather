@@ -91,7 +91,7 @@ namespace CuriousWeather
       }
 
       UpdateColor(data);
-      masterChart.MinimumValue = data.Min(bm => bm.Value) > 0 ? (float)Math.Floor  (data.Min(bm => bm.Value) * 0.8) : (float)Math.Floor  (data.Min(bm => bm.Value));
+      masterChart.MinimumValue = data.Min(bm => bm.Value) > 0 ? (float)Math.Floor  (data.Min(bm => bm.Value) * 0.9) : (float)Math.Floor  (data.Min(bm => bm.Value));
       masterChart.MaximumValue = data.Max(bm => bm.Value) > 0 ? (float)Math.Ceiling(data.Max(bm => bm.Value)      ) : (float)Math.Ceiling(data.Max(bm => bm.Value) * 0.9);
       masterChart.ItemsSource = data;
       UpdateChart2Data(masterChart.ItemsSource.First().Legend);

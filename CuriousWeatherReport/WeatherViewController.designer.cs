@@ -22,6 +22,15 @@ namespace CuriousWeather
 
 		[Outlet]
 		MonoTouch.UIKit.UILabel lbl_Pressure { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView img_Wind { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView img_Sun_Face { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView img_Sun_Rays { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -43,6 +52,21 @@ namespace CuriousWeather
 			if (lbl_Pressure != null) {
 				lbl_Pressure.Dispose ();
 				lbl_Pressure = null;
+			}
+
+			if (img_Wind != null) {
+				img_Wind.Dispose ();
+				img_Wind = null;
+			}
+
+			if (img_Sun_Face != null) {
+				img_Sun_Face.Dispose ();
+				img_Sun_Face = null;
+			}
+
+			if (img_Sun_Rays != null) {
+				img_Sun_Rays.Dispose ();
+				img_Sun_Rays = null;
 			}
 		}
 	}
