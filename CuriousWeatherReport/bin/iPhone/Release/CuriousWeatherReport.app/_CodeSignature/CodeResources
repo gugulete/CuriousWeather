@@ -6,11 +6,11 @@
 	<dict>
 		<key>BTProgressHUD.dll</key>
 		<data>
-		6f259IWO39gm6BgPkQwu42jFkGo=
+		HskL/AbVnbpeDkW1mjtrUSvzsqc=
 		</data>
 		<key>CuriousWeatherReport.exe</key>
 		<data>
-		PKfdw20iGOoSYQ/bjGTpTO4ef38=
+		hCT3IwIZgMN8RTozKreDJAdTRT4=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		UbYLFoJ0FfYYnvRHDi5MIqaOsH0=
+		m3gRuTxCTkLJwiLh2OqBztWQTO0=
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
-		CqZFGnGvg0Kg6qRwNAa2720wzrk=
+		N1/XuHdvjS+0GBohP8ORObvhKmw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>RestSharp.MonoTouch.dll</key>
 		<data>
-		MQf0nLJ+pwSArF1y5nyQal9DtWY=
+		OHEviThUNFXfJntxO2TBO7YY78A=
 		</data>
 		<key>StatisticsViewController.nib</key>
 		<data>
@@ -86,23 +86,23 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		+VQJ3ZtG8HtVMOmReHFlwGmVAa0=
+		XZFufN8WvCFkkyALSa5OCt++SYs=
 		</data>
 		<key>System.Runtime.Serialization.dll</key>
 		<data>
-		GskJq7FRJLyn9Xm3gct4/BEn4Jk=
+		bQ/psz30oC8KUL9PhSzLAmUY+Sw=
 		</data>
 		<key>System.Xml.Linq.dll</key>
 		<data>
-		G7zz5Uy10Mpeah8iRUzpEn7lOIQ=
+		yKQTiCJthxoys4OXiVfgTKrwgH4=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		2fa7Hq0J5+x3lgRpNCuxhUI4lwI=
+		MVaFaIAdfjCLrt1TgOf2ZsZN4JQ=
 		</data>
 		<key>System.dll</key>
 		<data>
-		NfkQmTsTk47vf8ieMD753TiNROE=
+		UE+XmPM5oRbm4dbJ9XY1Vg2XfVQ=
 		</data>
 		<key>TweetsViewController.nib</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>WeatherViewController.nib</key>
 		<data>
-		djCWZG2rif+MF1DTT+QhM87gLsw=
+		qPFwmr0It1dMbwaohpc5wZH1HPc=
 		</data>
 		<key>Xamarin.Controls.BarChart.iOS.dll</key>
 		<data>
-		GjExL+8d8AmNvTUfNDSIuYbJCQg=
+		saKvWEJq2YUdAwmqwU7drOpvYdM=
 		</data>
 		<key>background_Statistics@2x.png</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>background_Weather@2x.png</key>
 		<data>
-		aCVhaIUPAFCnyTGqn1Q8mBAB98M=
+		aDNilYJzvgSNTY3NNRt9xO4roXk=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -142,11 +142,31 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		bFmXoo8KPjiFjG8XjE/9v2ORbG8=
+		vf18sCk6f+cSr82GSCgEsEM/MHk=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		CH4CNS+o2m4kXzs6g8p0gMOFxAQ=
+		wUn/5XnIYvARX/IubpE5g8ghbKg=
+		</data>
+		<key>pressure_1@2x.png</key>
+		<data>
+		RREG8WVhI6emZxpwjKg6mbzxorw=
+		</data>
+		<key>pressure_2@2x.png</key>
+		<data>
+		Bf6oJV016y07kcJn8HefqxP4yLY=
+		</data>
+		<key>pressure_3@2x.png</key>
+		<data>
+		Ocf2gPOJVJRdisEnnvKLQKuE77I=
+		</data>
+		<key>pressure_4@2x.png</key>
+		<data>
+		8ghfkxaWBtxnyROL+p6H9Sg8zTQ=
+		</data>
+		<key>pressure_5@2x.png</key>
+		<data>
+		t3Eyb5AD1VRXPQJhPA1xky290YM=
 		</data>
 		<key>seg_divide@2x.png</key>
 		<data>
@@ -180,6 +200,54 @@
 		<data>
 		c5tHp/nrhfgmP3So1BLIB5LjhCk=
 		</data>
+		<key>sun_Face@2x.png</key>
+		<data>
+		2FD4KnXctJZVmojt96imHa6g+20=
+		</data>
+		<key>sun_Face_Blink_1.png</key>
+		<data>
+		qMwm+2KkOzafEypnJpb+axAhMz8=
+		</data>
+		<key>sun_Face_Eyes_1@2x.png</key>
+		<data>
+		2FD4KnXctJZVmojt96imHa6g+20=
+		</data>
+		<key>sun_Face_Eyes_2@2x.png</key>
+		<data>
+		jboNjVpWPONxKzhOpkbbXyQ6Jhw=
+		</data>
+		<key>sun_Face_Eyes_3@2x.png</key>
+		<data>
+		6LJp2Z4ohsJ1lx3dAPkZ0IjhIvc=
+		</data>
+		<key>sun_Face_Laugh_1.png</key>
+		<data>
+		iUdWOyK48gD4PCOPtrWjz80W3LQ=
+		</data>
+		<key>sun_Rays_1@2x.png</key>
+		<data>
+		yWl/qXyI2rgFgDwWFHP8MLKWTco=
+		</data>
+		<key>sun_Rays_2@2x.png</key>
+		<data>
+		1VmClwV1huEQLzo4vXH0o2qWcy8=
+		</data>
+		<key>sun_Rays_3@2x.png</key>
+		<data>
+		g7Gs7pTvCs7ijddyVe6F3RmDtmY=
+		</data>
+		<key>sun_Rays_4@2x.png</key>
+		<data>
+		1+OHLN9HjgHYA8U1IcG0x1POZBE=
+		</data>
+		<key>sun_Rays_5@2x.png</key>
+		<data>
+		uSb2VlPRgIpZod58d4NUt7lK1wo=
+		</data>
+		<key>sun_Rays_6@2x.png</key>
+		<data>
+		0SqO6clKooHxSHISrpOE3gmY8Qg=
+		</data>
 		<key>tabBar_background@2x.png</key>
 		<data>
 		+mlX8xsGwYJUuhAk0naV55utWao=
@@ -187,6 +255,18 @@
 		<key>tabBar_highlight@2x.png</key>
 		<data>
 		68yhN6oVpTSI2Ak9Jza+GC1avc4=
+		</data>
+		<key>temp_1@2x.png</key>
+		<data>
+		W2DyKm1P0x6ftLd9d+FSlGkdN54=
+		</data>
+		<key>temp_2@2x.png</key>
+		<data>
+		FgUjxXA+9nxPLSfH7RfySlz46K8=
+		</data>
+		<key>temp_3@2x.png</key>
+		<data>
+		4tJk2CqUN11DkDYDryiVDPRJjaY=
 		</data>
 		<key>tweet_Cell@2x.png</key>
 		<data>
@@ -215,6 +295,22 @@
 		<key>weather_Wind@2x.png</key>
 		<data>
 		zUTI+jwy4wxS/UJFIK+oZXaqE/s=
+		</data>
+		<key>wind_1@2x.png</key>
+		<data>
+		YLrfXX3wcwE7modE6iBdVzcbO58=
+		</data>
+		<key>wind_2@2x.png</key>
+		<data>
+		44Q4rhTOKkso3Rsdh/Xq57TWYJY=
+		</data>
+		<key>wind_3@2x.png</key>
+		<data>
+		YhTbC3BKMXtNw7tUedof/AbuhBo=
+		</data>
+		<key>wind_4@2x.png</key>
+		<data>
+		9ZEmXpI05fhk5pFtimVBuvEV730=
 		</data>
 	</dict>
 	<key>rules</key>

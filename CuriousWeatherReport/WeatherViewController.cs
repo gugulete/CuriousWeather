@@ -43,8 +43,8 @@ namespace CuriousWeather
       this.img_Wind.AnimationRepeatCount = 0;
       this.img_Wind.StartAnimating();
 
-      this.img_Sun_Rays.AnimationImages      = GetImages("sun_Rays_", 3);
-      this.img_Sun_Rays.AnimationDuration    = 1.2;
+      this.img_Sun_Rays.AnimationImages      = GetImages("sun_Rays_", 6);
+      this.img_Sun_Rays.AnimationDuration    = 1;
       this.img_Sun_Rays.AnimationRepeatCount = 0;
       this.img_Sun_Rays.StartAnimating();
 
@@ -57,8 +57,19 @@ namespace CuriousWeather
         UIImage.FromBundle("sun_Face_Eyes_3"),
         UIImage.FromBundle("sun_Face_Eyes_1"),
       });
+      this.sun_Face_Images.Add(new UIImage[] {
+        UIImage.FromBundle("sun_Face_Eyes_1" ),
+        UIImage.FromBundle("sun_Face_Blink_1"),
+        UIImage.FromBundle("sun_Face_Eyes_1" ),
+        UIImage.FromBundle("sun_Face_Eyes_1" ),
+      });
+      this.sun_Face_Images.Add(new UIImage[] {
+        UIImage.FromBundle("sun_Face_Eyes_1" ),
+        UIImage.FromBundle("sun_Face_Laugh_1"),
+        UIImage.FromBundle("sun_Face_Eyes_1" ),
+      });
 
-      this.img_lbl_Temp.AnimationDuration    = 2;
+      this.img_lbl_Temp.AnimationDuration    = 1.5;
       this.img_lbl_Temp.AnimationRepeatCount = 1;
       this.img_lbl_Temp.AnimationImages = new UIImage[] {
         UIImage.FromBundle("temp_1"),
@@ -68,10 +79,23 @@ namespace CuriousWeather
         UIImage.FromBundle("temp_1"),
       };
 
-      Sys.Timeout(5, () => {
-        AnimateSunFace();
-        AnimateTemp   ();
-      });
+      this.img_lbl_Pressure.AnimationDuration    = 1.2;
+      this.img_lbl_Pressure.AnimationRepeatCount = 1;
+      this.img_lbl_Pressure.AnimationImages = new UIImage[] {
+        UIImage.FromBundle("pressure_1"),
+        UIImage.FromBundle("pressure_2"),
+        UIImage.FromBundle("pressure_3"),
+        UIImage.FromBundle("pressure_4"),
+        UIImage.FromBundle("pressure_5"),
+        UIImage.FromBundle("pressure_4"),
+        UIImage.FromBundle("pressure_3"),
+        UIImage.FromBundle("pressure_2"),
+        UIImage.FromBundle("pressure_1"),
+      };
+
+      Sys.Timeout(Sys.Random.Next(5,10), () => AnimateSunFace ());
+      Sys.Timeout(Sys.Random.Next(5,10), () => Animate(this.img_lbl_Pressure));
+      Sys.Timeout(Sys.Random.Next(5,10), () => Animate(this.img_lbl_Temp    ));
     }
 
     public override void ViewWillAppear (bool animated)
@@ -97,10 +121,10 @@ namespace CuriousWeather
       this.img_Sun_Face.StartAnimating();
     }
 
-    private void AnimateTemp()
+    private void Animate(UIImageView _imgView)
     {
-      this.img_lbl_Temp.StartAnimating();
-      Sys.Timeout(Sys.Random.Next(5,10), () => AnimateTemp());
+      _imgView.StartAnimating();
+      Sys.Timeout(Sys.Random.Next(5,10), () => Animate(_imgView));
     }
 
     private UIImage[] GetImages(string _prefix, int _count)

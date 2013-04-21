@@ -132,7 +132,6 @@
     <BundleResource Include="Resources\seg_normal%402x.png" />
     <BundleResource Include="Resources\seg_highlight%402x.png" />
     <BundleResource Include="Resources\background_Tweet%402x.png" />
-    <BundleResource Include="Resources\weather_Pressure%402x.png" />
     <BundleResource Include="Resources\weather_Wind%402x.png" />
     <BundleResource Include="Resources\tweet_Header%402x.png" />
     <BundleResource Include="Resources\tweet_Cell%402x.png" />
@@ -154,16 +153,26 @@
     <BundleResource Include="Resources\wind_3%402x.png" />
     <BundleResource Include="Resources\wind_4%402x.png" />
     <BundleResource Include="Resources\sun_Face%402x.png" />
-    <BundleResource Include="Resources\background_Weather%402x.png" />
     <BundleResource Include="Resources\sun_Face_Eyes_1%402x.png" />
     <BundleResource Include="Resources\sun_Face_Eyes_2%402x.png" />
-    <BundleResource Include="Resources\sun_Rays_3%402x.png" />
-    <BundleResource Include="Resources\sun_Rays_2%402x.png" />
-    <BundleResource Include="Resources\sun_Rays_1%402x.png" />
     <BundleResource Include="Resources\temp_2%402x.png" />
     <BundleResource Include="Resources\temp_1%402x.png" />
     <BundleResource Include="Resources\temp_3%402x.png" />
     <BundleResource Include="Resources\sun_Face_Eyes_3%402x.png" />
+    <BundleResource Include="Resources\background_Weather%402x.png" />
+    <BundleResource Include="Resources\sun_Face_Blink_1.png" />
+    <BundleResource Include="Resources\sun_Face_Laugh_1.png" />
+    <BundleResource Include="Resources\sun_Rays_1%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_2%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_3%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_4%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_5%402x.png" />
+    <BundleResource Include="Resources\sun_Rays_6%402x.png" />
+    <BundleResource Include="Resources\pressure_1%402x.png" />
+    <BundleResource Include="Resources\pressure_2%402x.png" />
+    <BundleResource Include="Resources\pressure_3%402x.png" />
+    <BundleResource Include="Resources\pressure_4%402x.png" />
+    <BundleResource Include="Resources\pressure_5%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

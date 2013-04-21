@@ -116,26 +116,29 @@ namespace CuriousWeather
       detailsChart.ItemsSource = data;
     }
 
-    private UIColor GetColorTempLow(float _min, float _max, float _value)
-    {
-      return UIColor.FromHSB(((maxHlow - minHlow) * (_max + _min - _value) + _max * minHlow - _min * maxHlow)/(360*(_max - _min)), 0.87f, 0.95f);
-    }
-
     private readonly int minHlow = 120;
     private readonly int maxHlow = 210;
-    private readonly int minHpre = 220;
+    private readonly int minHpre = 210;
     private readonly int maxHpre = 360;
     private readonly int minHhgh = 0;
     private readonly int maxHhgh = 120;
 
+    private readonly float hsb_S = 0.6f;
+    private readonly float hsb_B = 0.6f;
+
+    private UIColor GetColorTempLow(float _min, float _max, float _value)
+    {
+      return UIColor.FromHSB(((maxHlow - minHlow) * (_max + _min - _value) + _max * minHlow - _min * maxHlow)/(360*(_max - _min)), hsb_S, hsb_B);
+    }
+    
     private UIColor GetColorTempHigh(float _min, float _max, float _value)
     {
-      return UIColor.FromHSB(((maxHhgh - minHhgh) * (_max + _min - _value) + _max * minHhgh - _min * maxHhgh)/(360*(_max - _min)), 0.87f, 0.95f);
+      return UIColor.FromHSB(((maxHhgh - minHhgh) * (_max + _min - _value) + _max * minHhgh - _min * maxHhgh)/(360*(_max - _min)), hsb_S, hsb_B);
     }
 
     private UIColor GetColorPressure(float _min, float _max, float _value)
     {
-      return UIColor.FromHSB(((maxHpre - minHpre) * _value + _max * minHpre - _min * maxHpre)/(360*(_max - _min)), 0.87f, 0.95f);
+      return UIColor.FromHSB(((maxHpre - minHpre) * _value + _max * minHpre - _min * maxHpre)/(360*(_max - _min)), hsb_S, hsb_B);
     }
 
     private void UpdateColor(IEnumerable<BarModel> _items)
