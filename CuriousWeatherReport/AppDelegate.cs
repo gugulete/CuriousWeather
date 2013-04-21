@@ -53,7 +53,7 @@ namespace CuriousWeather
 
       App.ReloadData();
 
-      UILabel.Appearance.Font = App.GetFont(14);
+      UILabel.Appearance.Font = App.GetFont(18);
       UISegmentedControl.Appearance.SetTitleTextAttributes(new UITextAttributes() { Font = App.GetFont(14) }, UIControlState.Normal);
       UITabBarItem      .Appearance.SetTitleTextAttributes(new UITextAttributes() { Font = App.GetFont(11) }, UIControlState.Normal);
 

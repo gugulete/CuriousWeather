@@ -35,15 +35,21 @@ namespace CuriousWeather
         var request = new RestRequest("statuses/user_timeline.json?screen_name={name}&count=200", Method.GET);
         request.AddUrlSegment("name", "MarsWxReport");
         client.ExecuteAsync(request, response => {
-          var arr = JArray.Parse(response.Content);
-          foreach (var item in arr) {
-            if (ProfilePic == null) LoadImage(item["user"]["profile_image_url"].Value<string>());
-            ReadTweet(item["text"].Value<string>(), item["id_str"].Value<string>(), DateTime.ParseExact(item["created_at"].Value<string>(), "ddd MMM dd HH:mm:ss zzz yyyy", CultureInfo.InvariantCulture));
-          }
+          try {
+            var arr = JArray.Parse(response.Content);
+            foreach (var item in arr) {
+              if (ProfilePic == null) LoadImage(item["user"]["profile_image_url"].Value<string>());
+              ReadTweet(item["text"].Value<string>(), item["id_str"].Value<string>(), DateTime.ParseExact(item["created_at"].Value<string>(), "ddd MMM dd HH:mm:ss zzz yyyy", CultureInfo.InvariantCulture));
+            }
 
-          if (DataLoaded != null) DataLoaded(null, new BoolEventArgs(true));
-          BTProgressHUD.ShowSuccessWithStatus("Data loaded!");
-          Sys.Timeout(1, () => BTProgressHUD.Dismiss());
+            if (DataLoaded != null) DataLoaded(null, new BoolEventArgs(true));
+            BTProgressHUD.ShowSuccessWithStatus("Data loaded!");
+            Sys.Timeout(1, () => BTProgressHUD.Dismiss());
+          } catch {
+            if (DataLoaded != null) DataLoaded(null, new BoolEventArgs(false));
+            BTProgressHUD.ShowErrorWithStatus  ("Something went wrong :(\nTry again after a while!");
+            Sys.Timeout(1, () => BTProgressHUD.Dismiss());
+          }
         });
       } catch {
         if (DataLoaded != null) DataLoaded(null, new BoolEventArgs(false));

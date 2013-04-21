@@ -50,29 +50,57 @@ namespace CuriousWeather
 
       this.img_Sun_Face.AnimationDuration    = 2;
       this.img_Sun_Face.AnimationRepeatCount = 1;
-      this.sun_Face_Images.Add(GetImages("sun_Face_Eyes_", 5));
+      this.sun_Face_Images.Add(new UIImage[] {
+        UIImage.FromBundle("sun_Face_Eyes_1"),
+        UIImage.FromBundle("sun_Face_Eyes_2"),
+        UIImage.FromBundle("sun_Face_Eyes_1"),
+        UIImage.FromBundle("sun_Face_Eyes_3"),
+        UIImage.FromBundle("sun_Face_Eyes_1"),
+      });
+
+      this.img_lbl_Temp.AnimationDuration    = 2;
+      this.img_lbl_Temp.AnimationRepeatCount = 1;
+      this.img_lbl_Temp.AnimationImages = new UIImage[] {
+        UIImage.FromBundle("temp_1"),
+        UIImage.FromBundle("temp_2"),
+        UIImage.FromBundle("temp_3"),
+        UIImage.FromBundle("temp_2"),
+        UIImage.FromBundle("temp_1"),
+      };
 
       Sys.Timeout(5, () => {
-        RefreshSunFace();
+        AnimateSunFace();
+        AnimateTemp   ();
       });
     }
 
     public override void ViewWillAppear (bool animated)
     {
       base.ViewWillAppear (animated);
-      this.img_Wind    .Frame = App.IsTall ? new RectangleF(110, 185, 75, 85) : new RectangleF(110, 140, 75, 85);
-      this.img_Sun_Rays.Frame = new RectangleF(0,0,180,180);
-      this.img_Sun_Face.Frame = new RectangleF(0,0,180,180);
+      this.img_Wind        .Frame = App.IsTall ? new RectangleF(110,185, 75, 85) : new RectangleF(110, 140, 75, 85);
+      this.img_Sun_Rays    .Frame =              new RectangleF(  0,  0,180,180);
+      this.img_Sun_Face    .Frame =              new RectangleF(  0,  0,180,180);
+      this.img_lbl_Pressure.Frame = App.IsTall ? new RectangleF(  5,270,105,115) : new RectangleF(  5,215,105,115);
+      this.img_lbl_Temp    .Frame =              new RectangleF(190,  5,128,110);
+      this.img_lbl_Wind    .Frame = App.IsTall ? new RectangleF(180,170,140, 60) : new RectangleF(180,130,140, 60);
+      this.lbl_Pressure    .Frame = App.IsTall ? new RectangleF( 15,345, 90, 30) : new RectangleF( 15,285, 90, 30);
+      this.lbl_TempHigh    .Frame =              new RectangleF(230, 20, 80, 20);
+      this.lbl_TempLow     .Frame =              new RectangleF(230, 50, 80, 20);
+      this.lbl_Wind        .Frame = App.IsTall ? new RectangleF(235,190, 75, 20) : new RectangleF(235,150, 75, 20);
     }
 
     private List<UIImage[]> sun_Face_Images = new List<UIImage[]>();
-    private void RefreshSunFace()
+    private void AnimateSunFace()
     {
       this.img_Sun_Face.AnimationImages = sun_Face_Images[Sys.Random.Next(sun_Face_Images.Count)];
-      Sys.Timeout(Sys.Random.Next(5,10), () => {
-        RefreshSunFace();
-      });
+      Sys.Timeout(Sys.Random.Next(5,10), () => AnimateSunFace());
       this.img_Sun_Face.StartAnimating();
+    }
+
+    private void AnimateTemp()
+    {
+      this.img_lbl_Temp.StartAnimating();
+      Sys.Timeout(Sys.Random.Next(5,10), () => AnimateTemp());
     }
 
     private UIImage[] GetImages(string _prefix, int _count)
