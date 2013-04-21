@@ -1,20 +1,18 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Nikola's iPhone" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CuriousWeatherReport/StatisticsViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Nikola Irinchev’s iPad" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CuriousWeatherReport/App.cs">
     <Files>
-      <File FileName="CuriousWeatherReport/Main.cs" Line="21" Column="1" />
+      <File FileName="CuriousWeatherReport/Main.cs" Line="17" Column="51" />
       <File FileName="CuriousWeatherReport/Info.plist" />
-      <File FileName="CuriousWeatherReport/StatisticsViewController.cs" Line="15" Column="31" />
+      <File FileName="CuriousWeatherReport/StatisticsViewController.cs" Line="126" Column="39" />
+      <File FileName="CuriousWeatherReport/WeatherViewController.cs" Line="82" Column="55" />
+      <File FileName="CuriousWeatherReport/App.cs" Line="37" Column="19" />
+      <File FileName="CuriousWeatherReport/AppDelegate.cs" Line="37" Column="7" />
+      <File FileName="CuriousWeatherReport/TweetsViewController.cs" Line="14" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/StatisticsViewController.cs" line="61" column="1" />
-      <Breakpoint file="/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/StatisticsViewController.cs" line="29" column="1" />
-      <Breakpoint file="/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/StatisticsViewController.cs" line="80" column="1" />
-      <Breakpoint file="/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/StatisticsViewController.cs" line="102" column="1" />
-      <Breakpoint file="/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/StatisticsViewController.cs" line="121" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

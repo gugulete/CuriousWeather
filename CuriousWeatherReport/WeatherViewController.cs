@@ -93,9 +93,14 @@ namespace CuriousWeather
         UIImage.FromBundle("pressure_1"),
       };
 
+      this.img_Curiosity.AnimationDuration    = 1;
+      this.img_Curiosity.AnimationRepeatCount = 1;
+      this.img_Curiosity.AnimationImages      = GetImages("curiosity_", 6);
+
       Sys.Timeout(Sys.Random.Next(5,10), () => AnimateSunFace ());
       Sys.Timeout(Sys.Random.Next(5,10), () => Animate(this.img_lbl_Pressure));
       Sys.Timeout(Sys.Random.Next(5,10), () => Animate(this.img_lbl_Temp    ));
+      Sys.Timeout(Sys.Random.Next(1,2 ), () => Animate(this.img_Curiosity,1,2));
     }
 
     public override void ViewWillAppear (bool animated)
@@ -106,11 +111,12 @@ namespace CuriousWeather
       this.img_Sun_Face    .Frame =              new RectangleF(  0,  0,180,180);
       this.img_lbl_Pressure.Frame = App.IsTall ? new RectangleF(  5,270,105,115) : new RectangleF(  5,215,105,115);
       this.img_lbl_Temp    .Frame =              new RectangleF(190,  5,128,110);
-      this.img_lbl_Wind    .Frame = App.IsTall ? new RectangleF(180,170,140, 60) : new RectangleF(180,130,140, 60);
+      this.img_lbl_Wind    .Frame = App.IsTall ? new RectangleF(195,170, 90, 60) : new RectangleF(195,130, 90, 60);
       this.lbl_Pressure    .Frame = App.IsTall ? new RectangleF( 15,345, 90, 30) : new RectangleF( 15,285, 90, 30);
       this.lbl_TempHigh    .Frame =              new RectangleF(230, 20, 80, 20);
       this.lbl_TempLow     .Frame =              new RectangleF(230, 50, 80, 20);
-      this.lbl_Wind        .Frame = App.IsTall ? new RectangleF(235,190, 75, 20) : new RectangleF(235,150, 75, 20);
+      this.lbl_Wind        .Frame = App.IsTall ? new RectangleF(205,190, 75, 20) : new RectangleF(205,150, 75, 20);
+      this.img_Curiosity   .Frame = App.IsTall ? new RectangleF( 95,280,220,165) : new RectangleF(100,200,220,165);
     }
 
     private List<UIImage[]> sun_Face_Images = new List<UIImage[]>();
@@ -121,10 +127,10 @@ namespace CuriousWeather
       this.img_Sun_Face.StartAnimating();
     }
 
-    private void Animate(UIImageView _imgView)
+    private void Animate(UIImageView _imgView, int _min = 5, int _max = 10)
     {
       _imgView.StartAnimating();
-      Sys.Timeout(Sys.Random.Next(5,10), () => Animate(_imgView));
+      Sys.Timeout(Sys.Random.Next(_min,_max), () => Animate(_imgView, _min, _max));
     }
 
     private UIImage[] GetImages(string _prefix, int _count)

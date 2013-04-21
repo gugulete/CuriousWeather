@@ -40,6 +40,9 @@ namespace CuriousWeather
 
 		[Outlet]
 		MonoTouch.UIKit.UIImageView img_lbl_Temp { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView img_Curiosity { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -91,6 +94,11 @@ namespace CuriousWeather
 			if (img_lbl_Temp != null) {
 				img_lbl_Temp.Dispose ();
 				img_lbl_Temp = null;
+			}
+
+			if (img_Curiosity != null) {
+				img_Curiosity.Dispose ();
+				img_Curiosity = null;
 			}
 		}
 	}

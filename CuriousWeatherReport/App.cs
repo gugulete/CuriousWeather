@@ -7,6 +7,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Drawing;
 using BigTed;
+using System.Xml;
 
 namespace CuriousWeather
 {
@@ -51,7 +52,7 @@ namespace CuriousWeather
             Sys.Timeout(1, () => BTProgressHUD.Dismiss());
           }
         });
-      } catch {
+      } catch (Exception ex) {
         if (DataLoaded != null) DataLoaded(null, new BoolEventArgs(false));
         BTProgressHUD.ShowErrorWithStatus  ("Something went wrong :(\nTry again after a while!");
         Sys.Timeout(1, () => BTProgressHUD.Dismiss());

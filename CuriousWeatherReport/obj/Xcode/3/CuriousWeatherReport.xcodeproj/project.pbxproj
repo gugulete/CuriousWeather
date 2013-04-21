@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		393C9A1D0000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDA6BB0000000000000000 /* UIKit.framework */; };
+		1AD23D500000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6349EE0000000000000000 /* MapKit.framework */; };
+		3005A5E80000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3396B2860000000000000000 /* Foundation.framework */; };
+		237088310000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270194CF0000000000000000 /* CoreGraphics.framework */; };
+		A30273500000000000000000 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC133D300000000000000000 /* WeatherViewController.xib */; };
+		111F5D550000000000000000 /* TweetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B069F30000000000000000 /* TweetsViewController.xib */; };
+		F3D657800000000000000000 /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CE72160000000000000000 /* StatisticsViewController.xib */; };
+		10EC7A390000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 147D86D70000000000000000 /* Default-568h@2x.png */; };
+		228ED6330000000000000000 /* statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 261FE2D10000000000000000 /* statistics@2x.png */; };
+		936CC8000000000000000000 /* tweets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424796600000000000000000 /* tweets@2x.png */; };
+		240B07D80000000000000000 /* weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C14760000000000000000 /* weather@2x.png */; };
+		782A2E800000000000000000 /* seg_divide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13AF8600000000000000000 /* seg_divide@2x.png */; };
+		2AFA3DF80000000000000000 /* seg_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8B4A960000000000000000 /* seg_normal@2x.png */; };
+		8FED48D00000000000000000 /* seg_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FE12B00000000000000000 /* seg_highlight@2x.png */; };
+		28E562FF0000000000000000 /* background_Tweet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C766F9D0000000000000000 /* background_Tweet@2x.png */; };
+		2A9477C00000000000000000 /* tweet_Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E25845E0000000000000000 /* tweet_Header@2x.png */; };
+		2DF2A1420000000000000000 /* tweet_Cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3183ADE00000000000000000 /* tweet_Cell@2x.png */; };
+		BF737D700000000000000000 /* background_Statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F88447500000000000000000 /* background_Statistics@2x.png */; };
+		A153FFA00000000000000000 /* statistics_SegmentedBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA64C9800000000000000000 /* statistics_SegmentedBg@2x.png */; };
+		29FBCE6C0000000000000000 /* tabBar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CDB0A0000000000000000 /* tabBar_background@2x.png */; };
+		651504000000000000000000 /* statistics_SegmentedHgh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E25CDE00000000000000000 /* statistics_SegmentedHgh@2x.png */; };
+		2604FB960000000000000000 /* tabBar_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 299608340000000000000000 /* tabBar_highlight@2x.png */; };
+		97C96A600000000000000000 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D0DA34400000000000000000 /* Icon-Small-50.png */; };
+		2CF431B60000000000000000 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30853E540000000000000000 /* Icon-Small@2x.png */; };
+		106BCCC60000000000000000 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FCD9640000000000000000 /* Icon-Small.png */; };
+		33E367D60000000000000000 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 377474740000000000000000 /* Icon-72.png */; };
+		392389350000000000000000 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB495D30000000000000000 /* Icon@2x.png */; };
+		202C30E30000000000000000 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23BD3D810000000000000000 /* Icon.png */; };
+		3A3CBF300000000000000000 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 734D89100000000000000000 /* Default@2x.png */; };
+		8E3ED5200000000000000000 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C74F9F000000000000000000 /* Default.png */; };
+		E240EB100000000000000000 /* wind_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11B51B4F0000000000000000 /* wind_1@2x.png */; };
+		136430100000000000000000 /* wind_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F53CAE0000000000000000 /* wind_2@2x.png */; };
+		1C027AF10000000000000000 /* wind_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F93878F0000000000000000 /* wind_3@2x.png */; };
+		24A0C5D20000000000000000 /* wind_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831D2700000000000000000 /* wind_4@2x.png */; };
+		81860E200000000000000000 /* sun_Face@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA96D8000000000000000000 /* sun_Face@2x.png */; };
+		27FEEF540000000000000000 /* sun_Face_Eyes_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8FFBF20000000000000000 /* sun_Face_Eyes_1@2x.png */; };
+		7E57DC600000000000000000 /* sun_Face_Eyes_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B768A6400000000000000000 /* sun_Face_Eyes_2@2x.png */; };
+		13E1F2290000000000000000 /* temp_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1772FEC70000000000000000 /* temp_2@2x.png */; };
+		192213880000000000000000 /* temp_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB320260000000000000000 /* temp_1@2x.png */; };
+		1E6234E70000000000000000 /* temp_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F341850000000000000000 /* temp_3@2x.png */; };
+		3E48C3590000000000000000 /* sun_Face_Eyes_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9CFF700000000000000000 /* sun_Face_Eyes_3@2x.png */; };
+		3FF7D81A0000000000000000 /* sun_Face_Blink_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 388E4B800000000000000000 /* sun_Face_Blink_1.png */; };
+		1A6ECDB00000000000000000 /* sun_Face_Laugh_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 537F97900000000000000000 /* sun_Face_Laugh_1.png */; };
+		251E87EB0000000000000000 /* sun_Rays_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF94890000000000000000 /* sun_Rays_1@2x.png */; };
+		89622FB00000000000000000 /* sun_Rays_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C272F9900000000000000000 /* sun_Rays_2@2x.png */; };
+		2C0DBE0B0000000000000000 /* sun_Rays_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9ECAA90000000000000000 /* sun_Rays_3@2x.png */; };
+		F85591B00000000000000000 /* sun_Rays_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 131665B90000000000000000 /* sun_Rays_4@2x.png */; };
+		32FCF42B0000000000000000 /* sun_Rays_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368E00C90000000000000000 /* sun_Rays_5@2x.png */; };
+		34AC08EC0000000000000000 /* sun_Rays_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A059BD90000000000000000 /* sun_Rays_6@2x.png */; };
+		1823A3FC0000000000000000 /* pressure_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB4B09A0000000000000000 /* pressure_1@2x.png */; };
+		3B9B3F0C0000000000000000 /* pressure_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C4BAA0000000000000000 /* pressure_2@2x.png */; };
+		1F12DA1C0000000000000000 /* pressure_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A3E6BA0000000000000000 /* pressure_3@2x.png */; };
+		28A752C00000000000000000 /* pressure_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B81CA00000000000000000 /* pressure_4@2x.png */; };
+		2602103C0000000000000000 /* pressure_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29931CDA0000000000000000 /* pressure_5@2x.png */; };
+		27B124FD0000000000000000 /* curiosity_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B42319B0000000000000000 /* curiosity_2@2x.png */; };
+		296039BE0000000000000000 /* curiosity_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF1465C0000000000000000 /* curiosity_3@2x.png */; };
+		2B0F4E7F0000000000000000 /* curiosity_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA05B1D0000000000000000 /* curiosity_4@2x.png */; };
+		2CBE63400000000000000000 /* curiosity_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 304F6FDE0000000000000000 /* curiosity_5@2x.png */; };
+		CA4F1B200000000000000000 /* background_Weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1035FE500000000000000000 /* background_Weather@2x.png */; };
+		E54067300000000000000000 /* curiosity_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11E513110000000000000000 /* curiosity_6@2x.png */; };
+		10031B340000000000000000 /* curiosity_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 139427D20000000000000000 /* curiosity_1@2x.png */; };
+		11B22FF50000000000000000 /* weather_Wind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15433C930000000000000000 /* weather_Wind@2x.png */; };
+		2E07B1C90000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3198BE670000000000000000 /* AppDelegate.h */; };
+		C0C485E00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D54FC00000000000000000 /* AppDelegate.m */; };
+		20D9EABE0000000000000000 /* WeatherViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 246AF75C0000000000000000 /* WeatherViewController.h */; };
+		5AB2F8000000000000000000 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBBF9600000000000000000 /* WeatherViewController.m */; };
+		11FD0EF20000000000000000 /* TweetsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 158E1B900000000000000000 /* TweetsViewController.h */; };
+		11CA2BD60000000000000000 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B38740000000000000000 /* TweetsViewController.m */; };
+		1FDB7B320000000000000000 /* StatisticsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 236C87D00000000000000000 /* StatisticsViewController.h */; };
+		13465D7B0000000000000000 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D76A190000000000000000 /* StatisticsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8AE9F000000000000000000 /* CuriousWeatherReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "CuriousWeatherReport.app"; path = "CuriousWeatherReport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCDA6BB0000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		1E6349EE0000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		3396B2860000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		270194CF0000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		DC133D300000000000000000 /* WeatherViewController.xib */ = {isa = PBXFileReference; name = "WeatherViewController.xib"; path = "WeatherViewController.xib"; sourceTree = "<group>"; };
+		14B069F30000000000000000 /* TweetsViewController.xib */ = {isa = PBXFileReference; name = "TweetsViewController.xib"; path = "TweetsViewController.xib"; sourceTree = "<group>"; };
+		12CE72160000000000000000 /* StatisticsViewController.xib */ = {isa = PBXFileReference; name = "StatisticsViewController.xib"; path = "StatisticsViewController.xib"; sourceTree = "<group>"; };
+		147D86D70000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		261FE2D10000000000000000 /* statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statistics@2x.png"; path = "statistics@2x.png"; sourceTree = "<group>"; };
+		424796600000000000000000 /* tweets@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tweets@2x.png"; path = "tweets@2x.png"; sourceTree = "<group>"; };
+		279C14760000000000000000 /* weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weather@2x.png"; path = "weather@2x.png"; sourceTree = "<group>"; };
+		B13AF8600000000000000000 /* seg_divide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seg_divide@2x.png"; path = "seg_divide@2x.png"; sourceTree = "<group>"; };
+		2E8B4A960000000000000000 /* seg_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seg_normal@2x.png"; path = "seg_normal@2x.png"; sourceTree = "<group>"; };
+		C8FE12B00000000000000000 /* seg_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seg_highlight@2x.png"; path = "seg_highlight@2x.png"; sourceTree = "<group>"; };
+		2C766F9D0000000000000000 /* background_Tweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_Tweet@2x.png"; path = "background_Tweet@2x.png"; sourceTree = "<group>"; };
+		2E25845E0000000000000000 /* tweet_Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tweet_Header@2x.png"; path = "tweet_Header@2x.png"; sourceTree = "<group>"; };
+		3183ADE00000000000000000 /* tweet_Cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tweet_Cell@2x.png"; path = "tweet_Cell@2x.png"; sourceTree = "<group>"; };
+		F88447500000000000000000 /* background_Statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_Statistics@2x.png"; path = "background_Statistics@2x.png"; sourceTree = "<group>"; };
+		DA64C9800000000000000000 /* statistics_SegmentedBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statistics_SegmentedBg@2x.png"; path = "statistics_SegmentedBg@2x.png"; sourceTree = "<group>"; };
+		2D8CDB0A0000000000000000 /* tabBar_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBar_background@2x.png"; path = "tabBar_background@2x.png"; sourceTree = "<group>"; };
+		9E25CDE00000000000000000 /* statistics_SegmentedHgh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statistics_SegmentedHgh@2x.png"; path = "statistics_SegmentedHgh@2x.png"; sourceTree = "<group>"; };
+		299608340000000000000000 /* tabBar_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBar_highlight@2x.png"; path = "tabBar_highlight@2x.png"; sourceTree = "<group>"; };
+		D0DA34400000000000000000 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		30853E540000000000000000 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		13FCD9640000000000000000 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		377474740000000000000000 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Icon-72.png"; sourceTree = "<group>"; };
+		3CB495D30000000000000000 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		23BD3D810000000000000000 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon.png"; path = "Icon.png"; sourceTree = "<group>"; };
+		734D89100000000000000000 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C74F9F000000000000000000 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default.png"; path = "Default.png"; sourceTree = "<group>"; };
+		11B51B4F0000000000000000 /* wind_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_1@2x.png"; path = "wind_1@2x.png"; sourceTree = "<group>"; };
+		16F53CAE0000000000000000 /* wind_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_2@2x.png"; path = "wind_2@2x.png"; sourceTree = "<group>"; };
+		1F93878F0000000000000000 /* wind_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_3@2x.png"; path = "wind_3@2x.png"; sourceTree = "<group>"; };
+		2831D2700000000000000000 /* wind_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_4@2x.png"; path = "wind_4@2x.png"; sourceTree = "<group>"; };
+		BA96D8000000000000000000 /* sun_Face@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face@2x.png"; path = "sun_Face@2x.png"; sourceTree = "<group>"; };
+		2B8FFBF20000000000000000 /* sun_Face_Eyes_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face_Eyes_1@2x.png"; path = "sun_Face_Eyes_1@2x.png"; sourceTree = "<group>"; };
+		B768A6400000000000000000 /* sun_Face_Eyes_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face_Eyes_2@2x.png"; path = "sun_Face_Eyes_2@2x.png"; sourceTree = "<group>"; };
+		1772FEC70000000000000000 /* temp_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "temp_2@2x.png"; path = "temp_2@2x.png"; sourceTree = "<group>"; };
+		1CB320260000000000000000 /* temp_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "temp_1@2x.png"; path = "temp_1@2x.png"; sourceTree = "<group>"; };
+		21F341850000000000000000 /* temp_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "temp_3@2x.png"; path = "temp_3@2x.png"; sourceTree = "<group>"; };
+		1D9CFF700000000000000000 /* sun_Face_Eyes_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face_Eyes_3@2x.png"; path = "sun_Face_Eyes_3@2x.png"; sourceTree = "<group>"; };
+		388E4B800000000000000000 /* sun_Face_Blink_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face_Blink_1.png"; path = "sun_Face_Blink_1.png"; sourceTree = "<group>"; };
+		537F97900000000000000000 /* sun_Face_Laugh_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Face_Laugh_1.png"; path = "sun_Face_Laugh_1.png"; sourceTree = "<group>"; };
+		28AF94890000000000000000 /* sun_Rays_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_1@2x.png"; path = "sun_Rays_1@2x.png"; sourceTree = "<group>"; };
+		C272F9900000000000000000 /* sun_Rays_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_2@2x.png"; path = "sun_Rays_2@2x.png"; sourceTree = "<group>"; };
+		2F9ECAA90000000000000000 /* sun_Rays_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_3@2x.png"; path = "sun_Rays_3@2x.png"; sourceTree = "<group>"; };
+		131665B90000000000000000 /* sun_Rays_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_4@2x.png"; path = "sun_Rays_4@2x.png"; sourceTree = "<group>"; };
+		368E00C90000000000000000 /* sun_Rays_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_5@2x.png"; path = "sun_Rays_5@2x.png"; sourceTree = "<group>"; };
+		1A059BD90000000000000000 /* sun_Rays_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun_Rays_6@2x.png"; path = "sun_Rays_6@2x.png"; sourceTree = "<group>"; };
+		1BB4B09A0000000000000000 /* pressure_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pressure_1@2x.png"; path = "pressure_1@2x.png"; sourceTree = "<group>"; };
+		3F2C4BAA0000000000000000 /* pressure_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pressure_2@2x.png"; path = "pressure_2@2x.png"; sourceTree = "<group>"; };
+		22A3E6BA0000000000000000 /* pressure_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pressure_3@2x.png"; path = "pressure_3@2x.png"; sourceTree = "<group>"; };
+		61B81CA00000000000000000 /* pressure_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pressure_4@2x.png"; path = "pressure_4@2x.png"; sourceTree = "<group>"; };
+		29931CDA0000000000000000 /* pressure_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pressure_5@2x.png"; path = "pressure_5@2x.png"; sourceTree = "<group>"; };
+		2B42319B0000000000000000 /* curiosity_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_2@2x.png"; path = "curiosity_2@2x.png"; sourceTree = "<group>"; };
+		2CF1465C0000000000000000 /* curiosity_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_3@2x.png"; path = "curiosity_3@2x.png"; sourceTree = "<group>"; };
+		2EA05B1D0000000000000000 /* curiosity_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_4@2x.png"; path = "curiosity_4@2x.png"; sourceTree = "<group>"; };
+		304F6FDE0000000000000000 /* curiosity_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_5@2x.png"; path = "curiosity_5@2x.png"; sourceTree = "<group>"; };
+		1035FE500000000000000000 /* background_Weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_Weather@2x.png"; path = "background_Weather@2x.png"; sourceTree = "<group>"; };
+		11E513110000000000000000 /* curiosity_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_6@2x.png"; path = "curiosity_6@2x.png"; sourceTree = "<group>"; };
+		139427D20000000000000000 /* curiosity_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "curiosity_1@2x.png"; path = "curiosity_1@2x.png"; sourceTree = "<group>"; };
+		15433C930000000000000000 /* weather_Wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weather_Wind@2x.png"; path = "weather_Wind@2x.png"; sourceTree = "<group>"; };
+		3198BE670000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		F9D54FC00000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		246AF75C0000000000000000 /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WeatherViewController.h"; path = "WeatherViewController.h"; sourceTree = "<group>"; };
+		3EBBF9600000000000000000 /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WeatherViewController.m"; path = "WeatherViewController.m"; sourceTree = "<group>"; };
+		158E1B900000000000000000 /* TweetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TweetsViewController.h"; path = "TweetsViewController.h"; sourceTree = "<group>"; };
+		155B38740000000000000000 /* TweetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TweetsViewController.m"; path = "TweetsViewController.m"; sourceTree = "<group>"; };
+		236C87D00000000000000000 /* StatisticsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StatisticsViewController.h"; path = "StatisticsViewController.h"; sourceTree = "<group>"; };
+		16D76A190000000000000000 /* StatisticsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "StatisticsViewController.m"; path = "StatisticsViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B927100000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393C9A1D0000000000000000 /* UIKit.framework in Frameworks */,
+				1AD23D500000000000000000 /* MapKit.framework in Frameworks */,
+				3005A5E80000000000000000 /* Foundation.framework in Frameworks */,
+				237088310000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		227503FF0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				D0EB84B00000000000000000 /* CuriousWeatherReport */,
+				2D2829D90000000000000000 /* Frameworks */,
+				17C1DE250000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17C1DE250000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8AE9F000000000000000000 /* CuriousWeatherReport.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		2D2829D90000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDA6BB0000000000000000 /* UIKit.framework */,
+				1E6349EE0000000000000000 /* MapKit.framework */,
+				3396B2860000000000000000 /* Foundation.framework */,
+				270194CF0000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D0EB84B00000000000000000 /* CuriousWeatherReport */ = {
+			isa = PBXGroup;
+			children = (
+				3198BE670000000000000000 /* AppDelegate.h */,
+				F88447500000000000000000 /* background_Statistics@2x.png */,
+				2C766F9D0000000000000000 /* background_Tweet@2x.png */,
+				1035FE500000000000000000 /* background_Weather@2x.png */,
+				139427D20000000000000000 /* curiosity_1@2x.png */,
+				2B42319B0000000000000000 /* curiosity_2@2x.png */,
+				2CF1465C0000000000000000 /* curiosity_3@2x.png */,
+				2EA05B1D0000000000000000 /* curiosity_4@2x.png */,
+				304F6FDE0000000000000000 /* curiosity_5@2x.png */,
+				11E513110000000000000000 /* curiosity_6@2x.png */,
+				C74F9F000000000000000000 /* Default.png */,
+				734D89100000000000000000 /* Default@2x.png */,
+				147D86D70000000000000000 /* Default-568h@2x.png */,
+				23BD3D810000000000000000 /* Icon.png */,
+				3CB495D30000000000000000 /* Icon@2x.png */,
+				377474740000000000000000 /* Icon-72.png */,
+				13FCD9640000000000000000 /* Icon-Small.png */,
+				30853E540000000000000000 /* Icon-Small@2x.png */,
+				D0DA34400000000000000000 /* Icon-Small-50.png */,
+				1BB4B09A0000000000000000 /* pressure_1@2x.png */,
+				3F2C4BAA0000000000000000 /* pressure_2@2x.png */,
+				22A3E6BA0000000000000000 /* pressure_3@2x.png */,
+				61B81CA00000000000000000 /* pressure_4@2x.png */,
+				29931CDA0000000000000000 /* pressure_5@2x.png */,
+				B13AF8600000000000000000 /* seg_divide@2x.png */,
+				C8FE12B00000000000000000 /* seg_highlight@2x.png */,
+				2E8B4A960000000000000000 /* seg_normal@2x.png */,
+				261FE2D10000000000000000 /* statistics@2x.png */,
+				DA64C9800000000000000000 /* statistics_SegmentedBg@2x.png */,
+				9E25CDE00000000000000000 /* statistics_SegmentedHgh@2x.png */,
+				236C87D00000000000000000 /* StatisticsViewController.h */,
+				12CE72160000000000000000 /* StatisticsViewController.xib */,
+				BA96D8000000000000000000 /* sun_Face@2x.png */,
+				388E4B800000000000000000 /* sun_Face_Blink_1.png */,
+				2B8FFBF20000000000000000 /* sun_Face_Eyes_1@2x.png */,
+				B768A6400000000000000000 /* sun_Face_Eyes_2@2x.png */,
+				1D9CFF700000000000000000 /* sun_Face_Eyes_3@2x.png */,
+				537F97900000000000000000 /* sun_Face_Laugh_1.png */,
+				28AF94890000000000000000 /* sun_Rays_1@2x.png */,
+				C272F9900000000000000000 /* sun_Rays_2@2x.png */,
+				2F9ECAA90000000000000000 /* sun_Rays_3@2x.png */,
+				131665B90000000000000000 /* sun_Rays_4@2x.png */,
+				368E00C90000000000000000 /* sun_Rays_5@2x.png */,
+				1A059BD90000000000000000 /* sun_Rays_6@2x.png */,
+				2D8CDB0A0000000000000000 /* tabBar_background@2x.png */,
+				299608340000000000000000 /* tabBar_highlight@2x.png */,
+				1CB320260000000000000000 /* temp_1@2x.png */,
+				1772FEC70000000000000000 /* temp_2@2x.png */,
+				21F341850000000000000000 /* temp_3@2x.png */,
+				3183ADE00000000000000000 /* tweet_Cell@2x.png */,
+				2E25845E0000000000000000 /* tweet_Header@2x.png */,
+				424796600000000000000000 /* tweets@2x.png */,
+				158E1B900000000000000000 /* TweetsViewController.h */,
+				14B069F30000000000000000 /* TweetsViewController.xib */,
+				279C14760000000000000000 /* weather@2x.png */,
+				15433C930000000000000000 /* weather_Wind@2x.png */,
+				246AF75C0000000000000000 /* WeatherViewController.h */,
+				DC133D300000000000000000 /* WeatherViewController.xib */,
+				11B51B4F0000000000000000 /* wind_1@2x.png */,
+				16F53CAE0000000000000000 /* wind_2@2x.png */,
+				1F93878F0000000000000000 /* wind_3@2x.png */,
+				2831D2700000000000000000 /* wind_4@2x.png */,
+				DEE403B00000000000000000 /* Supporting Files */,
+			);
+			name = "CuriousWeatherReport";
+			sourceTree = "<group>";
+		};
+		DEE403B00000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9D54FC00000000000000000 /* AppDelegate.m */,
+				16D76A190000000000000000 /* StatisticsViewController.m */,
+				155B38740000000000000000 /* TweetsViewController.m */,
+				3EBBF9600000000000000000 /* WeatherViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0276000000000000000000 /* CuriousWeatherReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D7C41600000000000000000 /* Build configuration list for PBXNativeTarget "CuriousWeatherReport" */;
+			buildPhases = (
+				3086535B0000000000000000 /* Sources */,
+				25B927100000000000000000 /* Frameworks */,
+				1970F2E60000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CuriousWeatherReport";
+			productName = "CuriousWeatherReport";
+			productReference = E8AE9F000000000000000000 /* CuriousWeatherReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C1D01860000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 39249E3C0000000000000000 /* Build configuration list for PBXProject "CuriousWeatherReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 227503FF0000000000000000;
+			productRefGroup = 17C1DE250000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D0276000000000000000000 /* CuriousWeatherReport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1970F2E60000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30273500000000000000000 /* WeatherViewController.xib in Resources */,
+				111F5D550000000000000000 /* TweetsViewController.xib in Resources */,
+				F3D657800000000000000000 /* StatisticsViewController.xib in Resources */,
+				10EC7A390000000000000000 /* Default-568h@2x.png in Resources */,
+				228ED6330000000000000000 /* statistics@2x.png in Resources */,
+				936CC8000000000000000000 /* tweets@2x.png in Resources */,
+				240B07D80000000000000000 /* weather@2x.png in Resources */,
+				782A2E800000000000000000 /* seg_divide@2x.png in Resources */,
+				2AFA3DF80000000000000000 /* seg_normal@2x.png in Resources */,
+				8FED48D00000000000000000 /* seg_highlight@2x.png in Resources */,
+				28E562FF0000000000000000 /* background_Tweet@2x.png in Resources */,
+				2A9477C00000000000000000 /* tweet_Header@2x.png in Resources */,
+				2DF2A1420000000000000000 /* tweet_Cell@2x.png in Resources */,
+				BF737D700000000000000000 /* background_Statistics@2x.png in Resources */,
+				A153FFA00000000000000000 /* statistics_SegmentedBg@2x.png in Resources */,
+				29FBCE6C0000000000000000 /* tabBar_background@2x.png in Resources */,
+				651504000000000000000000 /* statistics_SegmentedHgh@2x.png in Resources */,
+				2604FB960000000000000000 /* tabBar_highlight@2x.png in Resources */,
+				97C96A600000000000000000 /* Icon-Small-50.png in Resources */,
+				2CF431B60000000000000000 /* Icon-Small@2x.png in Resources */,
+				106BCCC60000000000000000 /* Icon-Small.png in Resources */,
+				33E367D60000000000000000 /* Icon-72.png in Resources */,
+				392389350000000000000000 /* Icon@2x.png in Resources */,
+				202C30E30000000000000000 /* Icon.png in Resources */,
+				3A3CBF300000000000000000 /* Default@2x.png in Resources */,
+				8E3ED5200000000000000000 /* Default.png in Resources */,
+				E240EB100000000000000000 /* wind_1@2x.png in Resources */,
+				136430100000000000000000 /* wind_2@2x.png in Resources */,
+				1C027AF10000000000000000 /* wind_3@2x.png in Resources */,
+				24A0C5D20000000000000000 /* wind_4@2x.png in Resources */,
+				81860E200000000000000000 /* sun_Face@2x.png in Resources */,
+				27FEEF540000000000000000 /* sun_Face_Eyes_1@2x.png in Resources */,
+				7E57DC600000000000000000 /* sun_Face_Eyes_2@2x.png in Resources */,
+				13E1F2290000000000000000 /* temp_2@2x.png in Resources */,
+				192213880000000000000000 /* temp_1@2x.png in Resources */,
+				1E6234E70000000000000000 /* temp_3@2x.png in Resources */,
+				3E48C3590000000000000000 /* sun_Face_Eyes_3@2x.png in Resources */,
+				3FF7D81A0000000000000000 /* sun_Face_Blink_1.png in Resources */,
+				1A6ECDB00000000000000000 /* sun_Face_Laugh_1.png in Resources */,
+				251E87EB0000000000000000 /* sun_Rays_1@2x.png in Resources */,
+				89622FB00000000000000000 /* sun_Rays_2@2x.png in Resources */,
+				2C0DBE0B0000000000000000 /* sun_Rays_3@2x.png in Resources */,
+				F85591B00000000000000000 /* sun_Rays_4@2x.png in Resources */,
+				32FCF42B0000000000000000 /* sun_Rays_5@2x.png in Resources */,
+				34AC08EC0000000000000000 /* sun_Rays_6@2x.png in Resources */,
+				1823A3FC0000000000000000 /* pressure_1@2x.png in Resources */,
+				3B9B3F0C0000000000000000 /* pressure_2@2x.png in Resources */,
+				1F12DA1C0000000000000000 /* pressure_3@2x.png in Resources */,
+				28A752C00000000000000000 /* pressure_4@2x.png in Resources */,
+				2602103C0000000000000000 /* pressure_5@2x.png in Resources */,
+				27B124FD0000000000000000 /* curiosity_2@2x.png in Resources */,
+				296039BE0000000000000000 /* curiosity_3@2x.png in Resources */,
+				2B0F4E7F0000000000000000 /* curiosity_4@2x.png in Resources */,
+				2CBE63400000000000000000 /* curiosity_5@2x.png in Resources */,
+				CA4F1B200000000000000000 /* background_Weather@2x.png in Resources */,
+				E54067300000000000000000 /* curiosity_6@2x.png in Resources */,
+				10031B340000000000000000 /* curiosity_1@2x.png in Resources */,
+				11B22FF50000000000000000 /* weather_Wind@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3086535B0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E07B1C90000000000000000 /* AppDelegate.h in Sources */,
+				C0C485E00000000000000000 /* AppDelegate.m in Sources */,
+				20D9EABE0000000000000000 /* WeatherViewController.h in Sources */,
+				5AB2F8000000000000000000 /* WeatherViewController.m in Sources */,
+				11FD0EF20000000000000000 /* TweetsViewController.h in Sources */,
+				11CA2BD60000000000000000 /* TweetsViewController.m in Sources */,
+				1FDB7B320000000000000000 /* StatisticsViewController.h in Sources */,
+				13465D7B0000000000000000 /* StatisticsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA0CFE10000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		2E7178620000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "CuriousWeatherReport";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39249E3C0000000000000000 /* Build configuration list for PBXProject "CuriousWeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA0CFE10000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		3D7C41600000000000000000 /* Build configuration list for PBXNativeTarget "CuriousWeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7178620000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C1D01860000000000000000 /* Project object */;
+}

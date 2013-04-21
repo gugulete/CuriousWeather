@@ -1,0 +1,1 @@
+--llvm --aot=mtriple=armv7s-darwin,full,static,asmonly,direct-icalls,nodebug,llvm-path=/Developer/MonoTouch/LLVM/bin/,outfile=/System.dll.armv7s.s "/Users/killer4o/Desktop/CuriousWeather/CuriousWeatherReport/bin/iPhone/Release/CuriousWeatherReport.app/System.dll"

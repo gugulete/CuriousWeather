@@ -6,11 +6,11 @@
 	<dict>
 		<key>BTProgressHUD.dll</key>
 		<data>
-		HskL/AbVnbpeDkW1mjtrUSvzsqc=
+		GuJRk6suiJgE2QAdkZgI7FB7YiI=
 		</data>
 		<key>CuriousWeatherReport.exe</key>
 		<data>
-		hCT3IwIZgMN8RTozKreDJAdTRT4=
+		3zYGZtUH71lGYvUJCPNjODCSkHQ=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		m3gRuTxCTkLJwiLh2OqBztWQTO0=
+		YPN9ec++F5ABDLfOWydEOhZgK4g=
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
-		N1/XuHdvjS+0GBohP8ORObvhKmw=
+		PSaLo7q1XEkuTjBuKRS/NplXXm0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -78,43 +78,43 @@
 		</data>
 		<key>RestSharp.MonoTouch.dll</key>
 		<data>
-		OHEviThUNFXfJntxO2TBO7YY78A=
+		tUqjlPphLxFYk0JxPuDzwS9lS4w=
 		</data>
 		<key>StatisticsViewController.nib</key>
 		<data>
-		HJd4Ln62sqLUP+V0bOVmNIy/HFc=
+		VY3VzcSeyu5U8FQlhbE4gNENQqk=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		XZFufN8WvCFkkyALSa5OCt++SYs=
+		UJQ8F6tJVG+Ahr2jqr8cPtqxlDk=
 		</data>
 		<key>System.Runtime.Serialization.dll</key>
 		<data>
-		bQ/psz30oC8KUL9PhSzLAmUY+Sw=
+		P5X2XxU1FBzxwOaSd+L20b3sZGo=
 		</data>
 		<key>System.Xml.Linq.dll</key>
 		<data>
-		yKQTiCJthxoys4OXiVfgTKrwgH4=
+		HEZu26/24YrY+G2qQmtsp79Ea2s=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		MVaFaIAdfjCLrt1TgOf2ZsZN4JQ=
+		PHjnGW2L7s9tzJJxzXEpnIujKuM=
 		</data>
 		<key>System.dll</key>
 		<data>
-		UE+XmPM5oRbm4dbJ9XY1Vg2XfVQ=
+		j2CwGstgWGAUgM1IXUFqwN8oc3o=
 		</data>
 		<key>TweetsViewController.nib</key>
 		<data>
-		v4xeqfiZfgchdqq9qWLfDDwiP48=
+		9oE3pKLkjqiI1MHXnQ6zyGRTZwg=
 		</data>
 		<key>WeatherViewController.nib</key>
 		<data>
-		qPFwmr0It1dMbwaohpc5wZH1HPc=
+		CYurAlOzZAZT7c6dtiL5Q/fvU4c=
 		</data>
 		<key>Xamarin.Controls.BarChart.iOS.dll</key>
 		<data>
-		saKvWEJq2YUdAwmqwU7drOpvYdM=
+		69U0015jKzd9/1SI4ykZjdCX7mc=
 		</data>
 		<key>background_Statistics@2x.png</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		vf18sCk6f+cSr82GSCgEsEM/MHk=
+		lp0BwfjMfUW9U8QkhAM9Sr8zH48=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		wUn/5XnIYvARX/IubpE5g8ghbKg=
+		sNcQBDiWgW8SwqufS0WEmPOvXSI=
 		</data>
 		<key>pressure_1@2x.png</key>
 		<data>
@@ -283,14 +283,6 @@
 		<key>weather@2x.png</key>
 		<data>
 		ePj1HHFLbBcEZYC9kYL8JTUChMQ=
-		</data>
-		<key>weather_Pressure@2x.png</key>
-		<data>
-		3f9ZRcQMb/fKrbm2xxroTEWaZU4=
-		</data>
-		<key>weather_Temp@2x.png</key>
-		<data>
-		OVchc9h2bvf8mUW4kTIWNLcBvqw=
 		</data>
 		<key>weather_Wind@2x.png</key>
 		<data>
