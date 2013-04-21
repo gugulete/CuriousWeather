@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../WishYouWereHere/StatisticsViewController.cs">
+    <Files>
+      <File FileName="../../../../WishYouWereHere/TweetsViewController.cs" Line="176" Column="44" />
+      <File FileName="../../../../WishYouWereHere/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="../../../../../../Desktop/App Store Projects/BiBlocks/BiBlocks/Gen.cs" Line="1" Column="1" />
+      <File FileName="../../../coreplot-0.9.2/samples/CorePlotiOSSample/CorePlotiOSSample/ScatterPlot.cs" Line="45" Column="1" />
+      <File FileName="../../../../WishYouWereHere/StatisticsViewController.cs" Line="65" Column="19" />
+      <File FileName="../../../barchart-1.1/samples/BarChart.iOS.Sample/BarChart_iOS_SampleViewController.cs" Line="69" Column="24" />
+      <File FileName="../../../../WishYouWereHere/App.cs" Line="95" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="BarChart.iOS.Sample" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

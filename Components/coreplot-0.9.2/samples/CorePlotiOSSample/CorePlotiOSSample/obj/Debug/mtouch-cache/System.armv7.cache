@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/System.dll.armv7.s "/Users/killer4o/Projects/WishYouWereHere/Components/coreplot-0.9.2/samples/CorePlotiOSSample/CorePlotiOSSample/bin/iPhone/Debug/CorePlotiOSSample.app/System.dll"

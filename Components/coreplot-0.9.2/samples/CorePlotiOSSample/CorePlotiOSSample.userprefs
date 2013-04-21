@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CorePlotiOSSample/BarPlot.cs">
+    <Files>
+      <File FileName="../../../../WishYouWereHere/TweetsViewController.cs" Line="1" Column="1" />
+      <File FileName="../../../../WishYouWereHere/App.cs" Line="1" Column="1" />
+      <File FileName="../../../../WishYouWereHere/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="../../../../../../Desktop/App Store Projects/BiBlocks/BiBlocks/Gen.cs" Line="1" Column="1" />
+      <File FileName="../../../barchart-1.1/samples/BarChart.iOS.Sample/BarChart_iOS_SampleViewController.cs" Line="1" Column="1" />
+      <File FileName="CorePlotiOSSample/RangePlot.cs" Line="18" Column="3" />
+      <File FileName="CorePlotiOSSample/PiePlot.cs" Line="1" Column="1" />
+      <File FileName="CorePlotiOSSample/BarPlot.cs" Line="25" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="CorePlotiOSSample" expanded="True">
+            <Node name="BarPlot.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

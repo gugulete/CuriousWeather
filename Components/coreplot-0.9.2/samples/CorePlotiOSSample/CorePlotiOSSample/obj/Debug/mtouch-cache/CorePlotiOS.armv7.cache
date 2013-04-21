@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,soft-debug,no-direct-calls,iphone-abi,outfile=/CorePlotiOS.dll.armv7.s "/var/folders/g9/r2v60_t95ybd0k5hh535xtgw0000gn/T/tmp4bad3631.tmp/CorePlotiOS.dll"
