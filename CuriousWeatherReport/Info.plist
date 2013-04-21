@@ -7,7 +7,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>Curious Weather</string>
+	<string>Mars Weather</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.nikros.nasa</string>
 	<key>CFBundleVersion</key>
@@ -24,5 +24,16 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon-Small-50</string>
+		<string>Icon-Small@2x</string>
+		<string>Icon-Small</string>
+		<string>Icon-72</string>
+		<string>Icon@2x</string>
+		<string>Icon</string>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 </dict>
 </plist>
