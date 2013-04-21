@@ -83,10 +83,11 @@ namespace CuriousWeather
       }
 
       List<BarModel> data = null;
+
       switch (seg_ChartType.SelectedSegment) {
-      case 0 : data = App.WeatherInfos.OrderBy(wi => wi.Date).GroupBy(wi => wi.Grouping).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.LowTemp ), Legend = g.Key, ValueCaption = g.Average(wi => wi.LowTemp ).ToString("0.0" ) }).ToList(); break;
-      case 1 : data = App.WeatherInfos.OrderBy(wi => wi.Date).GroupBy(wi => wi.Grouping).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.HighTemp), Legend = g.Key, ValueCaption = g.Average(wi => wi.HighTemp).ToString("0.0" ) }).ToList(); break;
-      case 2 : data = App.WeatherInfos.OrderBy(wi => wi.Date).GroupBy(wi => wi.Grouping).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.Pressure), Legend = g.Key, ValueCaption = g.Average(wi => wi.Pressure).ToString("0.00") }).ToList(); break;
+      case 0 : data = App.WeatherInfos.GroupBy(wi => wi.Grouping).OrderBy(g => g.Key).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.LowTemp ), Legend = g.Key, ValueCaption = g.Average(wi => wi.LowTemp ).ToString("0.0" ) }).ToList(); break;
+      case 1 : data = App.WeatherInfos.GroupBy(wi => wi.Grouping).OrderBy(g => g.Key).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.HighTemp), Legend = g.Key, ValueCaption = g.Average(wi => wi.HighTemp).ToString("0.0" ) }).ToList(); break;
+      case 2 : data = App.WeatherInfos.GroupBy(wi => wi.Grouping).OrderBy(g => g.Key).Select(g => new BarModel() { Value = (float)g.Average(wi => wi.Pressure), Legend = g.Key, ValueCaption = g.Average(wi => wi.Pressure).ToString("0.00") }).ToList(); break;
       }
 
       UpdateColor(data);
@@ -110,7 +111,7 @@ namespace CuriousWeather
       case 2 : data = App.WeatherInfos.Where(wi => wi.Grouping == _date).OrderBy(wi => wi.Date).Select(wi => new BarModel() { Value = (float)wi.Pressure, Legend = wi.Date.ToString("dd"), ValueCaption = wi.Pressure.ToString("0.00") }).ToList(); break;
       }
       UpdateColor(data);
-      detailsChart.MinimumValue = data.Min(bm => bm.Value) > 0 ? (float)Math.Floor  (data.Min(bm => bm.Value) * 0.8) : (float)Math.Floor  (data.Min(bm => bm.Value));
+      detailsChart.MinimumValue = data.Min(bm => bm.Value) > 0 ? (float)Math.Floor  (data.Min(bm => bm.Value) * 0.9) : (float)Math.Floor  (data.Min(bm => bm.Value));
       detailsChart.MaximumValue = data.Max(bm => bm.Value) > 0 ? (float)Math.Ceiling(data.Max(bm => bm.Value)      ) : (float)Math.Ceiling(data.Max(bm => bm.Value) * 0.9);
       detailsChart.ItemsSource = data;
     }
